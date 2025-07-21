@@ -1,0 +1,10 @@
+Accuracy Evaluation Results
+=======================================
+	Average System Accuracy(%): 99.0427
+	System Error(%)           : 0.957311
+	Precision (Micro)(%)      : 98.2761
+	Recall (Micro)(%)         : 99.8063
+	Fscore (Micro)(%)         : 99.0353
+	Precision (Macro)(%)      : 98.2761
+	Recall (Macro)(%)         : 99.8065
+	Fscore (Macro)(%)         : 99.0354
