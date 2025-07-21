@@ -12,6 +12,13 @@ The necessary components were obtained from the EvoApprox library (version 1.1),
 
 The Xilinx Alveo U55C accelerator was employed for resource experiments involving FPGA synthesis ([https://github.com/Xilinx/xacc](https://github.com/Xilinx/xacc)). The HLS procedure utilized Vitis version 2022.2. The image processing applications were simulated with a parallel implementation utilizing OpenMP, where each thread processes a distinct image.
 
+For short, the software requirements are:
+
+- EvoApprox library (version 1.1)
+- Jupyter notebook
+- Vitis version 2022.2
+- OpenMP
+
 ## Files
 
 The folder `apps` has the source code for each application, and their respective `Makefile`. Also, all the Jupyter files for each application are basically the same; however, each one calls its specific application during the run. Inside the folder, the structure of files is (for instance, for application **algo1**):
@@ -36,6 +43,7 @@ Meaning:
 - `testing.in` is a file that points to the test dataset;
 - `training.in` is a file that points to the training dataset;
 - `_src_` is a folder with the source code of the application;
+- `components_rev.csv` is the features of the components regrading error and LUT+FF usage
 
 **Observation:** this repository is lacking the input dataset for the image applications.  
 **Observation:** other important requirements to execute the Jupyter files are listed in the `requirements.txt` file.
